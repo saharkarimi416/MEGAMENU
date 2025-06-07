@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            direction: rtl;
+            height: 1000px;
+            background-image: url(ax.webp);
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        a{
+            text-decoration: none;
+
+        }
+        li{
+            list-style: none;
+        }
+
+        .menu {
+            width: 90%;
+            height: 200px;
+            background-color: rgb(194, 161, 113);
+            border: 2px solid rgb(186, 142, 62);
+            border-radius: 30px;
+            margin: 50px auto;
+            position: relative;
+            margin-inline: 50px;
+            display: flex;
+
+            >* {
+                height: 100%;
+            }
+
+            >figure {
+                display: flex;
+                width: 20%;
+
+
+                >img {
+                    width: 100%;
+                    height: 100%;
+                    border: 30px;
+                     transition: 1s all ease;
+
+                    &:hover {
+                        transform: rotate(90deg);
+
+
+                    }
+
+                }
+
+            }
+
+            >ul {
+                width: 80%;
+                display: flex;
+                justify-content: right;
+                
+                >li {
+                    /* background-color: blue; */
+                    height: 100%;
+                    &:hover{>ul{
+                        right: 100px;
+                       
+                        opacity: 1;
+                        overflow: visible;
+                       
+                          
+                      
+                     
+                             
+
+                    
+                        }
+                    
+                    }
+                    
+                  
+                    >a{
+                        /* background-color: aqua; */
+                        height: 100%;
+                        display: flex;
+                        padding: 30px;
+                        font-size: 25px;
+                        align-items: center;
+                        color: rgb(52, 36, 1);
+                        font-weight: bold;
+                        font-style: unset;
+                        transition: 1s;
+                        &:hover{
+                            background-color: rgb(210, 184, 152);
+                             text-shadow: 2px 2px 5px rgba(255,0,0,0.8);
+                            
+                             border-radius: 30px;
+
+                        }
+                       
+                    }
+                    >ul{
+                        width:200px ;
+                        background-color: rgba(228, 223, 189, 0.4);
+                        position: absolute;
+                        top: 197px;
+                      right: -120px;
+                       justify-content: right;
+                        overflow: hidden;
+                        opacity: 0;
+                       transition: 2s;
+                     
+                      
+                    
+                      
+
+                          border-radius: 20px;
+                      
+                        >li{
+                               width: 100%;
+                           
+                            padding: 20px;
+                          
+                          
+                           
+                            >a{
+                                
+                            font-size: 20px;
+                           
+                            height: 100%;
+                           
+                           justify-content: right;
+                            color: black;
+                            
+                                 &:hover{
+                            background-color: rgb(210, 184, 152);
+                             text-shadow: 2px 2px 5px rgba(255,0,0,0.8);
+                             transform: scale(1.07);
+                             border-radius: 30px;
+                            }
+
+                            }
+                        }
+                    }
+                  
+               
+                    }
+                  
+                }
+            
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="">خرید قهوه</a>
+                 
+            
+            </li>
+            <li><a href="">آموزش قهوه</a>
+          <ul>
+              <li><a href="">تهیه قهوه ترک</a></li>
+        <li><a href="">تهیه قهوه فرانسه</a></li>
+          <li><a href="">تهیه هات چاکلت</a></li>
+           <li><a href="">تهیه قهوه با موکاپات</a></li>
+          </ul>
+        
+        </li>
+            <li><a href="">کافی کلاب</a>
+         
+        </li>
+            <li><a href="">مشاور قهوه</a></li>
+            <li><a href="">راهنمای قهوه</a></li>
+        </ul>
+        <figure>
+            <img src="Welcome-coffee-is-roasting-150x150-min-150x150.webp" alt="">
+
+        </figure>
+    </nav>
+
+</body>
+
+</html>
